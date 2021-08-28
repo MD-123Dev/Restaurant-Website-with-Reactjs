@@ -1,0 +1,26 @@
+.fa{
+    font-size: 28px;
+    color:brown;
+    margin:2px;
+    
+}
+
+.title-sty{
+    position:relative;
+    margin-top: 15px;
+     left:50%;
+      border-bottom: 2px rgb(179, 29, 74);
+     
+      margin-bottom: 25px;
+
+}
+
+.styl-border-tit{
+    margin:0;
+    border-bottom: 3px solid rgb(16, 228, 8);
+    width: 95px;
+   position:relative;
+  
+   left:41%;
+   margin-bottom: 15px;
+}

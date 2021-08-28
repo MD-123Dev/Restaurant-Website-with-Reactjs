@@ -1,0 +1,21 @@
+.sty-cnt{
+    border-right: 2px solid rgb(138, 137, 137);
+    height: 1250px;
+}
+
+.sty-catg{
+    color:rgb(126, 122, 122);
+    text-decoration: underline;
+
+}
+
+.sty-a{
+   text-decoration: none; 
+   color:black;
+   font-size: 18px;
+}
+
+.sty-li{
+    color:rgb(225 29 202);
+    
+}
