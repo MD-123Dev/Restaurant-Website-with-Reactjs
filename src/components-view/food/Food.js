@@ -1,17 +1,41 @@
 
-import React from 'react'
-import images from '../../images/eat5.jpg'
-
+import React, { Component , useRef ,useState  } from 'react'
+import './style.css'
+ 
 const Food = (props) => {
+       const show = useRef(null)
+       const hide = useRef(null)
+       const [showv, setShow] = useState(false);
+
+
+    const hideCard = () => {
+        
+           setShow(!showv )
+          
+           show.current.style.display = (showv==false) ? "none" : "block";
+           hide.current.style.display = (showv==false) ? "block" : "none";
+
+    }
+    const showCard = () => {
+        
+           setShow(!showv )
+          
+           show.current.style.display = (showv==true) ? "block" : "none";
+           hide.current.style.display = (showv==true) ? "none" : "block";
+
+    }
+
     return (
         <div>
-            <div className="card mb-4" style={{width:'auto',height:300}}>
-                <img className="card-img-top" src={ props.image } style={{width:'auto',height:'200px'}} alt="" />
-                <div className="card-body">
-                    <h4 className="card-title">{ props.title}</h4>
-                    <p className="card-text"></p>
-                </div>
+            <div className=" sty-card" style={{width:'260px',height:300}}>
+                <img className="sty-img" src={ props.image } style={{width:'260px',height:'200px'}} alt="" ref = {show} onMouseOver={ hideCard  } />
+                 <div ref={hide} onMouseOut={ showCard  } className="sty-hide" style={{display:'none',width:'260px',height:'200px'}}>
+                   <h4 className="sty-titl">Description </h4>
+                   <p className="sty-text">{ props.title}</p>
+                   <button className="sty-btn"><i className="fa fa-shopping-cart"></i></button>
             </div>
+            </div>
+           
             
         </div>
     )

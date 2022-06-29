@@ -1,0 +1,39 @@
+
+.sty-card {
+  
+    border-radius: 15px ;
+   
+}
+.sty-img{
+    border-radius: 15px;
+}
+
+.sty-text{
+  
+   
+    color:rgb(71, 69, 69);
+}
+
+.sty-hide{
+       border-radius: 15px;
+       background-color:rgb(9, 175, 204);
+}
+
+.sty-btn{
+     margin-top: 30px;
+     margin-left: 69px;
+     width:120px;
+     height:40px;
+     background-color: rgb(251, 116, 116);
+     color:white;
+     margin-right: 10px;
+     border-radius: 0px 15px;
+}
+
+.sty-titl{
+   padding-top: 25px;
+   padding-left: 55px;
+   padding-bottom: 25px;
+   text-decoration: underline;
+   
+}

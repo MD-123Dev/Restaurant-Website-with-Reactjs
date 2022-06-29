@@ -17,5 +17,26 @@
 
 .sty-li{
     color:rgb(225 29 202);
+   
+}
+
+.sty-checkb{
+    margin-right: 8px;
+}
+
+.sty-arrow{
+    margin-left: 15px;
     
 }
+
+.sty-txt-prix{
+    
+    width:80px;
+   
+
+}
+
+.styl-range{
+    width:60%;
+}
+
