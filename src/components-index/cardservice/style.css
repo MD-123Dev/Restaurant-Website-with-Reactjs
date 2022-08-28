@@ -1,0 +1,18 @@
+  .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #c0ddb2;
+  overflow: hidden;
+  width: 100%;/*how much take in card ( width)*/
+  height: 0; /*.... (in height*/
+  transition: .6s ease;
+  }
+
+  /*if hover it take all card */
+  .card:hover .overlay {
+      height: 100%;
+  }
+
+  

@@ -8,7 +8,7 @@ import './style.css'
     return (
         <div>
                   <img className="img-fluid w-100 " src={foodimg} style={{height:730}} alt="" />
-                  <h1 className="sty-test">Wellcome :</h1>
+                  <h1 className="sty-test">Welcome :</h1>
         </div>
     )
 }

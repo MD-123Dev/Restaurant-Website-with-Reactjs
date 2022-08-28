@@ -24,3 +24,14 @@
    left:41%;
    margin-bottom: 15px;
 }
+
+
+.styl-border-catg {
+      margin:0;
+      border-bottom: 3px solid rgb(16, 228, 8);
+      width: 110px;
+      position:relative;
+
+      left:53%;
+      margin-bottom: 15px;
+}

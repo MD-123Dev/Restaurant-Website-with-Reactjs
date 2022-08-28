@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import './dipslay.css'
-import { Link } from 'react-router-dom'
 import Image from '../image/Image';
 import Gallery from '../gallery/Gallery';
 import Card from '../card/Card';
+import Category from '../image-gallery/ImageGallery';
+import CardGallery from '../cardservice/Card';
 
-import NavBar from '../../layout/navbar/NavBar';
-import Footer from '../../layout/footer/Footer';
+
 import image from '../../images/welc2.jpg'
 import image1 from '../../images/eat1.jpg'
 import image2 from '../../images/eat2.jpg'
@@ -15,6 +15,10 @@ import image3 from '../../images/eat3.jpg'
 import image4 from '../../images/eat4.jpg'
 import image5 from '../../images/eat5.jpg'
 import image6 from '../../images/eat6.jpg'
+
+import image7 from '../../images/image.jpg'
+import image8 from '../../images/image2.jpg'
+import image9 from '../../images/image3.jpg'
 
 
 class indexPage extends Component {
@@ -74,12 +78,32 @@ class indexPage extends Component {
                        </div>
                        
                    </div>
-                   
+                     <h1 className="title-sty">Categorie</h1>
+                      <div className="styl-border-catg"></div>
+                    
+                     <Category />
                 </div>
                 <div className="mb-3">
                    <img className="img-fluid" src={image} style={{width:'100%',height:'500px'}} alt="" />
                 </div>
              
+                <div>
+                     <div className="row mt-4 mb-3">
+                       <div className="col-md-4">
+                           <CardGallery  image={ image7}/>
+                       </div>
+                        <div className="col-md-4">
+                           <CardGallery  image={ image8 }/>
+                       </div>
+                        <div className="col-md-4">
+                           <CardGallery  image={ image9 }/>
+                       </div>
+                       
+                   </div>
+                   
+                </div>
+                  
+                 
             </div> 
         )
     }

@@ -1,4 +1,5 @@
 import React, { Component , useRef ,useState  } from 'react'
+import ChooseProducts from '../productchoose/ChooseProducts';
 
 import './style.css'
  
@@ -8,6 +9,7 @@ import './style.css'
            const toggleRg = useRef(null)
       
        const [show, setShow] = useState(false);
+       const [value, setValue] = useState(0);
 
      const showCategories = () => {
         
@@ -39,14 +41,23 @@ import './style.css'
                   
              </ul>  
                <h4 className="sty-catg">Prix <i className="fa fa-caret-down sty-arrow" onClick={showPrix} style={{cursor:'pointer'}}> </i></h4>
-               <div  ref = {toggleRg}>
-                   <input type="text" className="sty-txt-prix d-inline" value="0" />
+               <div  ref = {toggleRg} style={{marginTop:'20px'}}>
+                   <input type="text" className="sty-txt-prix d-inline" value={ value } />
                   
                    <input type="text" className="sty-txt-prix d-inline" style={{marginLeft:"25px"}} value="1000"/><br></br>
-                 <input type="range" name="range" class="form-range styl-range"  id="customRange1"></input>
-               </div>
+                 <input type="range" name="range" class="form-range styl-range" min ="0" max="1000" value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                    ></input>
+               </div >
+                  <div className="mt-2">
+                 <h4 className="sty-catg">Products: </h4>
 
+                    <ChooseProducts />
+                  </div>
+                   
               </div>
+              
+
         </div>
     )
 }

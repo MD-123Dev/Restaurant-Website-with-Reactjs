@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Filter from '../filter/Filter';
+
 import Food from '../food/Food';
 import Paginate from '../pagination/Pagination';
 import image1 from '../../images/eat1.jpg'
@@ -27,7 +28,9 @@ class viewpage extends Component {
                     <div className="row">
                        <div className="col-md-3">
                          <Filter />
+                         
                        </div>
+                      
                        <div className="col-md-9 mt-4">
                             <div className="row">
                                 <div className="col-md-3">
